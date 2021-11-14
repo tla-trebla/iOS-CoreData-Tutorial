@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="knJ-mC-dlO">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="ONt-hE-FWH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ONt-hE-FWH"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
