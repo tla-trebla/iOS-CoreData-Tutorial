@@ -30,7 +30,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="1gL-Fp-IQf" secondAttribute="top" constant="44" id="isq-t0-E6Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="knJ-mC-dlO"/>
+                    <navigationItem key="navigationItem" id="knJ-mC-dlO">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="ONt-hE-FWH"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
