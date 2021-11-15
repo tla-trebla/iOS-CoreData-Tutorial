@@ -48,6 +48,14 @@ class ViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    func save(name: String) {
+        
+        guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+    }
 }
 
 // MARK: - UITableViewDataSource
