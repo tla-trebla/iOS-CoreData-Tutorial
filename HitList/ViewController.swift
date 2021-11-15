@@ -35,7 +35,7 @@ class ViewController: UIViewController {
                       return
                   }
             
-            self.people.append(nameToSave)
+            self.save(name: nameToSave)
             self.tableView.reloadData()
         }
         
