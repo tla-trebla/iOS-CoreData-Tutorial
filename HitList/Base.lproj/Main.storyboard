@@ -34,7 +34,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="knJ-mC-dlO">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ONt-hE-FWH"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ONt-hE-FWH">
+                            <connections>
+                                <action selector="addName:" destination="BYZ-38-t0r" id="gS6-Pk-SK7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="1gL-Fp-IQf" id="hMg-W3-5xC"/>
