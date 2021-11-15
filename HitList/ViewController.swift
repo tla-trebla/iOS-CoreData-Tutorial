@@ -59,9 +59,11 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let person = people[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
                                                  for: indexPath)
-        cell.textLabel?.text = people[indexPath.row]
+        cell.textLabel?.text = person.value(forKey: "name") as? String
         return cell
     }
     
