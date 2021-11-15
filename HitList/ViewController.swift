@@ -37,6 +37,9 @@ class ViewController: UIViewController {
             self.names.append(nameToSave)
             self.tableView.reloadData()
         }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alert.addTextField()
     }
     
 }
