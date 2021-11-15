@@ -43,6 +43,8 @@ class ViewController: UIViewController {
         
         alert.addAction(saveAction)
         alert.addAction(cancelAction)
+        
+        present(alert, animated: true)
     }
     
 }
