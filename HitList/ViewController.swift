@@ -40,6 +40,9 @@ class ViewController: UIViewController {
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
         alert.addTextField()
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
     }
     
 }
