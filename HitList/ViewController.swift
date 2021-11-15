@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var names: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
