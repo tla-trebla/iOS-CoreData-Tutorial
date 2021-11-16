@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         title = "The List"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // 1
+        guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+    }
 
     @IBAction func addName(_ sender: UIBarButtonItem) {
         
