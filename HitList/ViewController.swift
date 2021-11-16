@@ -57,6 +57,13 @@ class ViewController: UIViewController {
         
         // 1
         let managedContext = appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let entity = NSEntityDescription.entity(forEntityName: "Person",
+                                                in: managedContext)!
+        
+        let person = NSManagedObject(entity: entity,
+                                     insertInto: managedContext)
     }
 }
 
