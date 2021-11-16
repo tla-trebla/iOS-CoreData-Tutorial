@@ -67,6 +67,14 @@ class ViewController: UIViewController {
         
         // 3
         person.setValue(name, forKey: "name")
+        
+        // 4
+        do {
+            try managedContext.save()
+            people.append(person)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
     }
 }
 
