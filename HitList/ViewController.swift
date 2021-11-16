@@ -29,6 +29,8 @@ class ViewController: UIViewController {
         UIApplication.shared.delegate as? AppDelegate else {
             return
         }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
     }
 
     @IBAction func addName(_ sender: UIBarButtonItem) {
