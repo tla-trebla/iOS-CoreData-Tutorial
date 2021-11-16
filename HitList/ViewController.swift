@@ -64,6 +64,9 @@ class ViewController: UIViewController {
         
         let person = NSManagedObject(entity: entity,
                                      insertInto: managedContext)
+        
+        // 3
+        person.setValue(name, forKey: "name")
     }
 }
 
