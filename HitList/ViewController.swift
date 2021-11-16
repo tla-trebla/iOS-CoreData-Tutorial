@@ -31,6 +31,9 @@ class ViewController: UIViewController {
         }
         
         let managedContext = appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
     }
 
     @IBAction func addName(_ sender: UIBarButtonItem) {
