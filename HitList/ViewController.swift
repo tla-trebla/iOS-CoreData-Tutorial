@@ -34,6 +34,13 @@ class ViewController: UIViewController {
         
         // 2
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Person")
+        
+        // 3
+        do {
+            people = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
 
     @IBAction func addName(_ sender: UIBarButtonItem) {
