@@ -55,6 +55,8 @@ class ViewController: UIViewController {
             return
         }
         
+        // 1
+        let managedContext = appDelegate.persistentContainer.viewContext
     }
 }
 
